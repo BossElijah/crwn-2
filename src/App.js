@@ -3,17 +3,17 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/homepage/homepage';
 import ShopPage from './pages/shop/shop';
+import Header from './components/header/header';
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/shop" component={ShopPage} />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/shop" component={ShopPage} />
+      </Switch>
+    </Router>
   );
 };
 
