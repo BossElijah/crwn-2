@@ -11,7 +11,7 @@
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: bolder;
-  border: none;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -19,7 +19,8 @@
   &:hover {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    outline: 1px solid black;
+    outline-offset: -1px;
   }
 
   &.google-sign-in {
@@ -28,19 +29,22 @@
 
     &:hover {
       background-color: #357ae8;
-      border: none;
+      outline: none;
+      outline-offset: 0;
     }
   }
 
   &.inverted {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    outline: 1px solid black;
+    outline-offset: -1px;
 
     &:hover {
       background-color: black;
       color: white;
-      border: none;
+      outline: none;
+      outline-offset: 0;
     }
   }
 }
