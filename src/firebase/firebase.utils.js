@@ -15,7 +15,7 @@ const config = {
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
-  const userRef = firestore.doc(`users/${userAuth.uid}`)
+  const userRef = firestore.doc(`users/${userAuth.uid}`);
 
   const snapShot = await userRef.get();
 
@@ -28,17 +28,24 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData
-      })
+        ...additionalData,
+      });
     } catch (error) {
       console.log('Error creating user! Message:', error.message);
     }
   }
 
   return userRef;
-}
+};
 
-firebase.initializeApp(config);
+if (!firebase.apps.length) {
+  // @TODO This if/else statement is not anything Yihua did. It is an answer
+  // from Stackoverflow (next line):
+  // https://stackoverflow.com/questions/43331011/firebase-app-named-default-already-exists-app-duplicate-app
+  firebase.initializeApp(config);
+} else {
+  firebase.app();
+}
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
