@@ -28,4 +28,35 @@
     margin-left: auto;
     font-size: 36px;
   }
+
+  button {
+    margin-left: auto;
+    margin-top: 15px;
+  }
+
+  .test-warning {
+    margin: 40px 0;
+
+    p {
+      text-align: center;
+      font-size: 24px;
+      color: red;
+    }
+
+    table {
+      border-collapse: collapse;
+      text-align: left;
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 15px;
+        font-size: large;
+      }
+
+      span {
+        margin: 0 3px;
+      }
+    }
+  }
 }
