@@ -19,7 +19,7 @@ const Header = ({ currentUser, hidden }) => (
       <Link className="option" to="/shop">
         SHOP
       </Link>
-      <a className="option" href="mailto:elias@lfpost.dk" >
+      <a className="option" href="mailto:elias@lfpost.dk">
         CONTACT
       </a>
       {currentUser ? (
