@@ -38,14 +38,19 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
+// @TODO This if/else statement is not anything Yihua did. It is an answer
+// from Stackoverflow (next line):
+// https://stackoverflow.com/questions/43331011/firebase-app-named-default-already-exists-app-duplicate-app
 if (!firebase.apps.length) {
-  // @TODO This if/else statement is not anything Yihua did. It is an answer
-  // from Stackoverflow (next line):
-  // https://stackoverflow.com/questions/43331011/firebase-app-named-default-already-exists-app-duplicate-app
   firebase.initializeApp(config);
 } else {
   firebase.app();
 }
+
+export const addCollectionAndDocuments = (collectionKey, objectsToAdd) => {
+  const collectionRef = firestore.collection(collectionKey);
+  console.log(collectionRef);
+};
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
