@@ -9,7 +9,7 @@ const config = {
   storageBucket: 'bosselijah-crwn.appspot.com',
   messagingSenderId: '658885131319',
   appId: '1:658885131319:web:141b1485cbc36e37c493b2',
-  measurementId: 'G-72S003S8FS',
+  measurementId: 'G-72S003S8FS'
 };
 
 // @TODO This if/else statement is not anything Yihua did. It is an answer
@@ -37,7 +37,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData,
+        ...additionalData
       });
     } catch (error) {
       console.log('Error creating user! Message:', error.message);
@@ -60,6 +60,24 @@ export const addCollectionAndDocuments = async (
   });
 
   return await batch.commit();
+};
+
+export const convertCollectionsSnapshotToMap = collections => {
+  const transformedCollection = collections.docs.map(doc => {
+    const { title, items } = doc.data();
+
+    return {
+      routeName: encodeURI(title.toLowerCase()),
+      id: doc.id,
+      title,
+      items
+    };
+  });
+
+  return transformedCollection.reduce((accumulator, collection) => {
+    accumulator[collection.title.toLowerCase()] = collection;
+    return accumulator;
+  }, {});
 };
 
 export const auth = firebase.auth();

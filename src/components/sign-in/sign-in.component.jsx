@@ -5,7 +5,7 @@ import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 import {
   SignInContainer,
   SignInTitle,
-  ButtonsBarContainer,
+  ButtonsBarContainer
 } from './sign-in.styles';
 
 class SignIn extends React.Component {
@@ -14,7 +14,7 @@ class SignIn extends React.Component {
 
     this.state = {
       email: '',
-      password: '',
+      password: ''
     };
   }
 

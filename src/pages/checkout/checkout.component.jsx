@@ -5,7 +5,7 @@ import StripeCheckoutButton from '../../components/stripe-button/stripe-button.c
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import {
   selectCartItems,
-  selectCartTotal,
+  selectCartTotal
 } from '../../redux/cart/cart.selectors';
 import {
   CheckoutPageContainer,
@@ -15,7 +15,7 @@ import {
   WarningParagraph,
   CreditCardTable,
   TableData,
-  CardNumberSpan,
+  CardNumberSpan
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
@@ -230,7 +230,7 @@ const CheckoutPage = ({ cartItems, total }) => (
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
-  total: selectCartTotal,
+  total: selectCartTotal
 });
 
 export default connect(mapStateToProps)(CheckoutPage);
