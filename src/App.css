@@ -1,6 +1,9 @@
 body {
   font-family: 'Open Sans Condensed';
   padding: 20px 40px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -11,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
