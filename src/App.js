@@ -28,15 +28,15 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={CheckoutPage} />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
-            path='/signin'
+            path="/signin"
             render={() =>
               this.props.currentUser ? (
-                <Redirect to='/' />
+                <Redirect to="/" />
               ) : (
                 <SignInAndSignUpPage />
               )
@@ -56,7 +56,4 @@ const mapDispatchToProps = dispatch => ({
   checkUserSession: () => dispatch(checkUserSession())
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
