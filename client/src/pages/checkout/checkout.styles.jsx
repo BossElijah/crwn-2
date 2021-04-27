@@ -37,25 +37,9 @@ export const TotalContainer = styled.div`
   font-size: 36px;
 `;
 
-export const WarningParagraph = styled.div`
+export const WarningContainer = styled.div`
   text-align: center;
+  margin-top: 40px;
   font-size: 24px;
   color: red;
-  margin: 0;
-  margin-top: 40px;
-`;
-
-export const CreditCardTable = styled.table`
-  text-align: left;
-  border-collapse: collapse;
-  font-size: 18px;
-`;
-
-export const TableData = styled.td`
-  border: 1px solid black;
-  padding: 20px;
-`;
-
-export const CardNumberSpan = styled.span`
-  padding: 3px;
 `;
