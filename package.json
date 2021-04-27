@@ -25,5 +25,20 @@
   "devDependencies": {
     "concurrently": "^6.0.2",
     "nodemon": "^1.19.1"
-  }
+  },
+  "description": "crw-clothing",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BossElijah/crwn-2.git"
+  },
+  "keywords": [
+    "clothes"
+  ],
+  "author": "BossElijah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BossElijah/crwn-2/issues"
+  },
+  "homepage": "https://github.com/BossElijah/crwn-2#readme"
 }
