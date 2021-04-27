@@ -2,24 +2,21 @@ const INITIAL_STATE = {
   sections: [
     {
       title: 'hats',
-      imageUrl:
-        'https://images.unsplash.com/photo-1484593068577-0b446a79ed33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      imageUrl: 'https://thumblr.uniid.it/product/207929/53c57f256bce.jpg',
       id: 1,
       linkUrl: 'shop/hats'
     },
     {
       title: 'jackets',
-      imageUrl:
-        'https://images.unsplash.com/photo-1600271772470-bd22a42787b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80',
+      imageUrl: 'https://thumblr.uniid.it/product/210017/360f028e205b.jpg',
       id: 2,
       linkUrl: 'shop/jackets'
     },
     {
-      title: 'sneakers',
-      imageUrl:
-        'https://images.unsplash.com/photo-1444090542259-0af8fa96557e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      title: 'shoes',
+      imageUrl: 'https://thumblr.uniid.it/product/217103/329dd9987986.jpg',
       id: 3,
-      linkUrl: 'shop/sneakers'
+      linkUrl: 'shop/shoes'
     },
     {
       title: 'women',
