@@ -13,16 +13,16 @@ const StripeCheckoutButton = ({ price }) => {
       method: 'post',
       data: {
         amount: priceForStripe,
-        token
+        token: token
       }
     })
       .then(response => {
-        alert(`You successfully paid $${price}`);
+        alert('succesful payment');
       })
       .catch(error => {
-        console.log('Payment error: ', JSON.parse(error));
+        console.log('Payment Error: ', error);
         alert(
-          'There was an issue with your payment. Please make sure you use the provided credit card.'
+          'There was an issue with your payment! Please make sure you use the provided credit card.'
         );
       });
   };
@@ -34,9 +34,9 @@ const StripeCheckoutButton = ({ price }) => {
       billingAddress
       shippingAddress
       image="https://svgshare.com/i/CUz.svg"
-      descripton={`Your total is $${price}`}
+      description={`Your total is $${price}`}
       amount={priceForStripe}
-      panelLabel="Pay "
+      panelLabel="Pay Now"
       token={onToken}
       stripeKey={publishableKey}
     />

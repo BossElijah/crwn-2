@@ -3,23 +3,16 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: 'AIzaSyD3_xavdUmGWcbe9ZZCxp8mRXtdameKUWA',
-  authDomain: 'bosselijah-crwn.firebaseapp.com',
-  projectId: 'bosselijah-crwn',
-  storageBucket: 'bosselijah-crwn.appspot.com',
-  messagingSenderId: '658885131319',
-  appId: '1:658885131319:web:141b1485cbc36e37c493b2',
-  measurementId: 'G-72S003S8FS'
+  apiKey: "AIzaSyD3_xavdUmGWcbe9ZZCxp8mRXtdameKUWA",
+  authDomain: "bosselijah-crwn.firebaseapp.com",
+  projectId: "bosselijah-crwn",
+  storageBucket: "bosselijah-crwn.appspot.com",
+  messagingSenderId: "658885131319",
+  appId: "1:658885131319:web:141b1485cbc36e37c493b2",
+  measurementId: "G-72S003S8FS"
 };
 
-// @TODO This if/else statement is not anything Yihua did. It is an answer
-// from Stackoverflow (next line):
-// https://stackoverflow.com/questions/43331011/firebase-app-named-default-already-exists-app-duplicate-app
-if (!firebase.apps.length) {
-  firebase.initializeApp(config);
-} else {
-  firebase.app();
-}
+firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;

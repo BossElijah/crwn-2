@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
+
 import {
   clearItemFromCart,
   addItem,
   removeItem
 } from '../../redux/cart/cart.actions';
+
 import {
   CheckoutItemContainer,
   ImageContainer,
@@ -18,7 +20,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
   return (
     <CheckoutItemContainer>
       <ImageContainer>
-        <img src={imageUrl} alt="item" />
+        <img src={imageUrl} alt='item' />
       </ImageContainer>
       <TextContainer>{name}</TextContainer>
       <QuantityContainer>
@@ -40,4 +42,7 @@ const mapDispatchToProps = dispatch => ({
   removeItem: item => dispatch(removeItem(item))
 });
 
-export default connect(null, mapDispatchToProps)(CheckoutItem);
+export default connect(
+  null,
+  mapDispatchToProps
+)(CheckoutItem);
