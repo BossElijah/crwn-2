@@ -3,28 +3,28 @@ const INITIAL_STATE = {
     {
       title: 'hats',
       imageUrl:
-        'https://images.unsplash.com/photo-1619490938509-b95fec9c6399?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjE5NjEwNTQ5&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit',
+        'https://source.unsplash.com/daily?cliff',
       id: 1,
       linkUrl: 'shop/hats'
     },
     {
       title: 'jackets',
       imageUrl:
-        'https://images.unsplash.com/photo-1619490938509-b95fec9c6399?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjE5NjEwNTQ5&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit',
+        'https://source.unsplash.com/daily?water',
       id: 2,
       linkUrl: 'shop/jackets'
     },
     {
       title: 'sneakers',
       imageUrl:
-        'https://images.unsplash.com/photo-1619490938509-b95fec9c6399?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjE5NjEwNTQ5&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit',
+        'https://source.unsplash.com/weekly?mountain',
       id: 3,
       linkUrl: 'shop/sneakers'
     },
     {
       title: 'womens',
       imageUrl:
-        'https://images.unsplash.com/photo-1619490938509-b95fec9c6399?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjE5NjEwNTQ5&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit',
+        'https://source.unsplash.com/daily?mountain',
       size: 'large',
       id: 4,
       linkUrl: 'shop/womens'
@@ -32,7 +32,7 @@ const INITIAL_STATE = {
     {
       title: 'mens',
       imageUrl:
-        'https://images.unsplash.com/photo-1619490938509-b95fec9c6399?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjE5NjEwNTQ5&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit',
+        'https://source.unsplash.com/weekly?cliff',
       size: 'large',
       id: 5,
       linkUrl: 'shop/mens'
