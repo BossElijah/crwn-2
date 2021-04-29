@@ -21,7 +21,7 @@ const CollectionItem = ({ item, addItem }) => {
         <PriceContainer>{price}</PriceContainer>
       </CollectionFooterContainer>
       <AddButton onClick={() => addItem(item)} inverted>
-        Add to cart
+        Add item
       </AddButton>
     </CollectionItemContainer>
   );

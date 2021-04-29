@@ -33,6 +33,10 @@ export const CollectionItemContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 650px) {
+    height: 250px;
+  }
 `;
 
 export const AddButton = styled(CustomButton)`
@@ -44,9 +48,13 @@ export const AddButton = styled(CustomButton)`
 
   @media screen and (max-width: 800px) {
     display: block;
-    opacity: .9;
+    opacity: 0.9;
     min-width: unset;
     padding: 0 10px;
+  }
+
+  @media screen and (max-width: 650px) {
+    top: 165px;
   }
 `;
 
