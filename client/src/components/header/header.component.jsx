@@ -16,7 +16,7 @@ import {
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
-    <LogoContainer to="/">
+    <LogoContainer to="">
       <Logo className="logo" />
     </LogoContainer>
     <OptionsContainer>

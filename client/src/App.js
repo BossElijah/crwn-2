@@ -28,14 +28,14 @@ const App = ({ checkUserSession, currentUser }) => {
       <Switch>
         <ErrorBoundary>
           <Suspense fallback={<Spinner />}>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="" component={HomePage} />
             <Route path="/shop" component={ShopPage} />
             <Route exact path="/checkout" component={CheckoutPage} />
             <Route
               exact
               path="/signin"
               render={() =>
-                currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
+                currentUser ? <Redirect to="" /> : <SignInAndSignUpPage />
               }
             />
           </Suspense>
